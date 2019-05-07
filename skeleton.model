@@ -51,9 +51,9 @@ rule step for state in roommates {
         state = Failed;
       } else {
         bananas += bag.carrying;
-        notePresent = False;
         state = Hungry;
       }
+      notePresent=False
     }
     
     Failed {
